@@ -158,8 +158,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Vision" Type="Folder" URL="../Vision">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Elevator" Type="Folder"/>
-		<Item Name="Intake" Type="Folder"/>
 		<Item Name="Configuration" Type="Folder" URL="../Configuration">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -818,8 +816,6 @@ AddOutputFilter chunkFilter
 			<Item Name="GoToHeight.vi" Type="VI" URL="../Elevator/Commands/GoToHeight.vi"/>
 			<Item Name="StayAtHeight.vi" Type="VI" URL="../Elevator/Commands/StayAtHeight.vi"/>
 			<Item Name="Immediate.vi" Type="VI" URL="../Elevator/Commands/Immediate.vi"/>
-			<Item Name="Intake Controller.vi" Type="VI" URL="../Intake/Implementation/Intake Controller.vi"/>
-			<Item Name="Elevator Controller.vi" Type="VI" URL="../Elevator/Implementation/Elevator Controller.vi"/>
 			<Item Name="IntakeStateMachine.vi" Type="VI" URL="../Intake/Implementation/IntakeStateMachine.vi"/>
 			<Item Name="Immediate but left and right.vi" Type="VI" URL="../Intake/Commands/Immediate but left and right.vi"/>
 		</Item>
