@@ -808,16 +808,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Lossy Stream-c(dbl,dbl,dbl,c(dbl,dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,c(dbl,dbl)).lvlib"/>
 			<Item Name="Intake Immediate.vi" Type="VI" URL="../Intake/Commands/Intake Immediate.vi"/>
 			<Item Name="Stop.vi" Type="VI" URL="../Elevator/Commands/Stop.vi"/>
-			<Item Name="Elevator Published Globals.vi" Type="VI" URL="../Elevator/Implementation/Elevator Published Globals.vi"/>
-			<Item Name="Intake Published Globals.vi" Type="VI" URL="../Intake/Implementation/Intake Published Globals.vi"/>
 			<Item Name="Intake for Duration.vi" Type="VI" URL="../Intake/Commands/Intake for Duration.vi"/>
 			<Item Name="Intake Until Cube.vi" Type="VI" URL="../Intake/Commands/Intake Until Cube.vi"/>
 			<Item Name="LiftForTime.vi" Type="VI" URL="../Elevator/Commands/LiftForTime.vi"/>
 			<Item Name="GoToHeight.vi" Type="VI" URL="../Elevator/Commands/GoToHeight.vi"/>
 			<Item Name="StayAtHeight.vi" Type="VI" URL="../Elevator/Commands/StayAtHeight.vi"/>
 			<Item Name="Immediate.vi" Type="VI" URL="../Elevator/Commands/Immediate.vi"/>
-			<Item Name="IntakeStateMachine.vi" Type="VI" URL="../Intake/Implementation/IntakeStateMachine.vi"/>
-			<Item Name="Immediate but left and right.vi" Type="VI" URL="../Intake/Commands/Immediate but left and right.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
