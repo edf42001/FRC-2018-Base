@@ -9,7 +9,7 @@ for filename in *
 do	
   if [ ! -z "$(git log -1 --format="%ad" -- "$filename")" ] && [ -z "$(git diff "$filename")" ]
   then
-    echo "$filename $(git log -1 --format="%ai" -- "$filename")"
+    echo "$filename $(git log -1 --format="%ai" -- "$filename")" #Change to -2 for two lines of log
   else
     echo $filename
   fi
