@@ -55,11 +55,11 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="PathFileData.ctl" Type="VI" URL="../../Shared/PathFileData.ctl"/>
+			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
 			<Item Name="PathToROI.vi" Type="VI" URL="../PathDrawer/PathToROI.vi"/>
 			<Item Name="PromptForAttributes.vi" Type="VI" URL="../AutoFileEditor/PromptForAttributes.vi"/>
 			<Item Name="ReplaceSelfClosingStructureElements.vi" Type="VI" URL="../AutoFileEditor/Utils/ReplaceSelfClosingStructureElements.vi"/>
-			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Shared/RobotNeededPathData.ctl"/>
+			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="Smoother.vi" Type="VI" URL="../PathDrawer/Smoother.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
