@@ -104,7 +104,6 @@
 			<Item Name="WhichVIsShouldRegenerate.vi" Type="VI" URL="../CreateCommands/Utils/WhichVIsShouldRegenerate.vi"/>
 			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TurnToAngleController.vi"/>
 			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
-			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 			<Item Name="TrapezoidalMotionProfile.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TrapezoidalMotionProfile.vi"/>
 			<Item Name="ShouldFlipAcceleration.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/ShouldFlipAcceleration.vi"/>
 			<Item Name="DriveForDistanceController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceController.vi"/>
@@ -112,6 +111,7 @@
 			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
 			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
+			<Item Name="TimerOffDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOffDelay.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
