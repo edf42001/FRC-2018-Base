@@ -33,6 +33,8 @@
 		<Item Name="GenerateCode.vi" Type="VI" URL="../CreateCommands/GenerateCode.vi"/>
 		<Item Name="TestPurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/TestPurePursuit.vi"/>
 		<Item Name="LoggingTesting.vi" Type="VI" URL="../Logging/LoggingTesting.vi"/>
+		<Item Name="1DTurnMain.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/1DTurnMain.vi"/>
+		<Item Name="DriveForDistanceTester.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceTester.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
@@ -104,6 +106,19 @@
 			<Item Name="LoggingOperation.vi" Type="VI" URL="../Logging/LoggingOperation.vi"/>
 			<Item Name="DataNames.ctl" Type="VI" URL="../Logging/DataNames.ctl"/>
 			<Item Name="WhichVIsShouldRegenerate.vi" Type="VI" URL="../CreateCommands/Utils/WhichVIsShouldRegenerate.vi"/>
+			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TurnToAngleController.vi"/>
+			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
+			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
+			<Item Name="TrapezoidalMotionProfile.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TrapezoidalMotionProfile.vi"/>
+			<Item Name="ShouldFlipAcceleration.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/ShouldFlipAcceleration.vi"/>
+			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
+			<Item Name="Robot.vi" Type="VI" URL="../../../../Dawgma Programming Library/RobotSimulator/Robot.vi"/>
+			<Item Name="derivative.vi" Type="VI" URL="../../../../Dawgma Programming Library/Utilities/derivative.vi"/>
+			<Item Name="DriveForDistanceController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceController.vi"/>
+			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
+			<Item Name="InjectPoints.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
+			<Item Name="PurePursuit.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
+			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -217,6 +232,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Autonomous.vi" Type="VI" URL="../Autonomous.vi"/>
 		<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		<Item Name="SubSystems.vi" Type="VI" URL="../SubSystems.vi"/>
+		<Item Name="1DTurnMainTester.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/1DTurnMainTester.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -877,6 +893,10 @@ AddOutputFilter chunkFilter
 			<Item Name="FancyPID.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/FancyPID.vi"/>
 			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
 			<Item Name="StringToBoolean.vi" Type="VI" URL="../CreateCommands/Utils/StringToBoolean.vi"/>
+			<Item Name="Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib"/>
+			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
+			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Dawgma Programming Library/Utilities/derivative.vi"/>
+			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/Drive/Implementation/Controllers/TurnToAngleController.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
