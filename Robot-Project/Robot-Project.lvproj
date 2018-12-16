@@ -77,7 +77,6 @@
 			<Item Name="Drive Published Globals.vi" Type="VI" URL="../Drive/Implementation/Drive Published Globals.vi"/>
 			<Item Name="Drive for Time.vi" Type="VI" URL="../Drive/Commands/Drive for Time.vi"/>
 			<Item Name="Turn to Angle.vi" Type="VI" URL="../Drive/Commands/Turn to Angle.vi"/>
-			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
 			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/derivative.vi"/>
 			<Item Name="robotFriction.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/robotFriction.vi"/>
 			<Item Name="motorTorque.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/motorTorque.vi"/>
@@ -88,7 +87,6 @@
 			<Item Name="VisualizePurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/VisualizePurePursuit.vi"/>
 			<Item Name="CalculateCurvature.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateCurvature.vi"/>
 			<Item Name="DistanceFormula.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/DistanceFormula.vi"/>
-			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
 			<Item Name="LookAheadPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/LookAheadPoint.vi"/>
 			<Item Name="Timeout.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Timeout.vi"/>
 			<Item Name="TimerOnDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOnDelay.vi"/>
@@ -99,9 +97,7 @@
 			<Item Name="CalculateVelAtPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateVelAtPoints.vi"/>
 			<Item Name="CalcDistanceFromEnd.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalcDistanceFromEnd.vi"/>
 			<Item Name="RadiusOfCircleThreePoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RadiusOfCircleThreePoints.vi"/>
-			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
 			<Item Name="Smoother.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/Smoother.vi"/>
-			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="LogOperation.ctl" Type="VI" URL="../Logging/LogOperation.ctl"/>
 			<Item Name="LoggingOperation.vi" Type="VI" URL="../Logging/LoggingOperation.vi"/>
 			<Item Name="DataNames.ctl" Type="VI" URL="../Logging/DataNames.ctl"/>
@@ -111,14 +107,11 @@
 			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 			<Item Name="TrapezoidalMotionProfile.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TrapezoidalMotionProfile.vi"/>
 			<Item Name="ShouldFlipAcceleration.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/ShouldFlipAcceleration.vi"/>
-			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
-			<Item Name="Robot.vi" Type="VI" URL="../../../../Dawgma Programming Library/RobotSimulator/Robot.vi"/>
-			<Item Name="derivative.vi" Type="VI" URL="../../../../Dawgma Programming Library/Utilities/derivative.vi"/>
 			<Item Name="DriveForDistanceController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceController.vi"/>
-			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
-			<Item Name="InjectPoints.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
-			<Item Name="PurePursuit.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
-			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
+			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
+			<Item Name="InjectPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/InjectPoints.vi"/>
+			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
+			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -885,18 +878,19 @@ AddOutputFilter chunkFilter
 			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 			<Item Name="EncodersGyroToXY.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EncodersGyroToXY.vi"/>
 			<Item Name="RateLimiter.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/RateLimiter.vi"/>
-			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/derivative.vi"/>
 			<Item Name="CustomError.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CustomError.vi"/>
 			<Item Name="PurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PurePursuit.vi"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
-			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
 			<Item Name="FancyPID.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/FancyPID.vi"/>
 			<Item Name="CheesyDrive.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CheesyDrive.vi"/>
 			<Item Name="StringToBoolean.vi" Type="VI" URL="../CreateCommands/Utils/StringToBoolean.vi"/>
 			<Item Name="Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib"/>
-			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
-			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Dawgma Programming Library/Utilities/derivative.vi"/>
-			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/Drive/Implementation/Controllers/TurnToAngleController.vi"/>
+			<Item Name="derivative.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/derivative.vi"/>
+			<Item Name="ShouldFlipAcceleration.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/ShouldFlipAcceleration.vi"/>
+			<Item Name="TrapezoidalMotionProfile.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TrapezoidalMotionProfile.vi"/>
+			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
+			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TurnToAngleController.vi"/>
+			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
