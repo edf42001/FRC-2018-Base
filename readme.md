@@ -11,7 +11,7 @@ About Flexible Autonomous:
 The flexible autonomous scripting system consists of two parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
 
 Creation:
-The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
+Open the Support/AutoEditor.lvproj to find the AutoFileCreator VI. The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
 
 To add a command or a structural element to the routine, select it in the command box, then left click the text box where you want to put it. You may only click at the end of a line, right after the closing ">" of a tag to validly add a new command/structure (collectively called tags from now on).
 
