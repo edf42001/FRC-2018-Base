@@ -31,6 +31,8 @@ A "command" is a VI that will execute on your robot. To create a command, add a 
 
 Currently, only boolean, number, and string parameters are supported. 
 
+Extra Note: Many of the VIs that make up the Flexible Autonomous system have the paths to other folders and VIs as part of their code. If you take the code and intergate it into your own robot project and put the VIs and folders in different locations, you may get File/Folder not found errors. You can go into the VIs with the errors and change the paths. Sorry there is currently no central location for changing these paths.
+
 
 
 
