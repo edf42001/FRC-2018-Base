@@ -1,11 +1,53 @@
 This is hopefully team 1712's starting point for their robot code. This readme is a little unorganized as it is simply a collection of the documentation that went into this project. In order:
 
-* Feature list
 * Desription of Flexible Autonomous System
 * Description of new logging system
+* Feature list
 
 
-Feature list
+
+About Flexible Autonomous:
+
+The flexible autonomous scripting system consists of two parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
+
+Creation:
+The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
+
+To add a command or a structural element to the routine, select it in the command box, then left click the text box where you want to put it. You may only click at the end of a line, right after the closing ">" of a tag to validly add a new command/structure (collectively called tags from now on).
+
+If placing a command, a window will open for you to enter the parameters. (See Creating Commands for how to make these windows). The OK button will confirm what you have entered, while clicking Cancel or closing the window will cancel the placing of the command. 
+
+The routine can be modified by double clicking. A double click will bring up a window with options. You do not have to double click at the end of the line. Current supported operations are Edit, Delete, and Clear, with thought to add a Move option. Edit allows the user to edit the parameters of the tag. Delete deletes the tag. Clear clears the entire routine.
+
+There are, of course, the well known Load From Local, Save to Local, and Export to Robot buttons and a selection box with auto files. These do what you would expect.
+
+Clicking ESC unselects the current selected command.
+
+Execution:
+The flexible autonomous system is flexible because the user does not need to modify anything for eecution to work. It is all based on the available commands given to the system, see Creating Commands. All you have to do is pass it the path on the roboRIO to the file you want to run.
+
+Creating Commands:
+A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run the VI GenerateCode, which will take your templates and convert them into a form that can be run in autonomous. 
+
+Currently, only boolean, number, and string parameters are supported. 
+
+
+
+
+About new logging:
+
+So basically there's a VI called LoggingOperation that acts as a central server for to-be-logged data. It has a feedback node it uses to store the data. It uses LabVIEW's "variant" (any type) to log any data type you want as log as you manually write the code to convert that data type to a string, which I have done with String, Number, Boolean, and Enum.
+It has three operations, Set, GetAll, and GetHeaders
+Set takes in the data name and the data, and stores it in the VI.
+Get All gets all the stored data and converts it to a csv string.
+GetHedears reads the names from the DataNames enum .ctl and outputs the csv string for the headers of the file
+All the VIs are in saved in the Robot-Project/Logging folder, and are mostly in periodic tasks (file writing) and the drive controller (some data writing) for now. 
+
+
+
+
+
+Feature list:
 
 	Robot-Project/
 		Framework/Begin.vi		
@@ -60,51 +102,3 @@ Feature list
 		Utilities/, things like OneShotPulse.vi, TImerOnDelay.vi, Derivative.vi, BoxcarFilter.vi
 		Vision/, Vision code from 2017, just to have it. 
 		WPI Helper Stuff/, things that could sort of be in WPI library, so CheesyDrive.vi, CustomError.vi, GetPDPCurrents.vi.
-
-
-About Flexible Autonomous:
-
-The flexible autonomous scripting system consists of two parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
-
-Creation:
-The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
-
-To add a command or a structural element to the routine, select it in the command box, then left click the text box where you want to put it. You may only click at the end of a line, right after the closing ">" of a tag to validly add a new command/structure (collectively called tags from now on).
-
-If placing a command, a window will open for you to enter the parameters. (See Creating Commands for how to make these windows). The OK button will confirm what you have entered, while clicking Cancel or closing the window will cancel the placing of the command. 
-
-The routine can be modified by double clicking. A double click will bring up a window with options. You do not have to double click at the end of the line. Current supported operations are Edit, Delete, and Clear, with thought to add a Move option. Edit allows the user to edit the parameters of the tag. Delete deletes the tag. Clear clears the entire routine.
-
-There are, of course, the well known Load From Local, Save to Local, and Export to Robot buttons and a selection box with auto files. These do what you would expect.
-
-Clicking ESC unselects the current selected command.
-
-Execution:
-The flexible autonomous system is flexible because the user does not need to modify anything for eecution to work. It is all based on the available commands given to the system, see Creating Commands.
-
-Creating Commands:
-A "command" is a VI that will execute on your robot. To create a command, add a VI in the special TestCommands Folder. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. 
-
-Currently, only boolean, number, and string parameters are supported. 
-
-
-
-Using this Proof Of Concept Project:
-To create files, use the GenerateXML VI. To execute a file, use the ExecuteXML VI. The Routine Data cluster demonstrates which commands are being executed. 
-
-Other Things:
-The text based interface could, and probably should, be replaced with a graphical one. 
-Using LabVIEW might limit our ability to do that, but if we use another language it needs to be able to interface with labview to read the command VIs (maybe using a .exe) and I would like it to be able to use scp to get the files on the robot. 
-
-You are supposed to close references to things you open, but I don't know if not doing so negativley affect performance.
-
-
-About new logging:
-
-So basically there's a VI called LoggingOperation that acts as a central server for to-be-logged data. It has a feedback node it uses to store the data. It uses LabVIEW's "variant" (any type) to log any data type you want as log as you manually write the code to convert that data type to a string, which I have done with String, Number, Boolean, and Enum.
-It has three operations so far, Init, Get All, and Set.
-Init takes in an array of header names for all the data you want to log, in the order you want them to appear in the file.
-Set takes in the data name and the data, and stores it in the VI. Throws an error if the name is not found.
-Get All gets all the stored data and converts it to a csv string.
-And that's it. It's supposed to be more convient and less prone to errors, but my concern is CPU usage for all the data storage operations. 
-All the VIs are in saved in the logging folder, and are mostly in periodic tasks (file writing) and the drive controller (some data writing) for now. 
