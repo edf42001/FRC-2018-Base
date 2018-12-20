@@ -1,4 +1,6 @@
-This is hopefully team 1712's starting point for their robot code. This readme is a little unorganized as it is simply a collection of the documentation that went into this project. In order:
+This robot project is meant to be the culmination of the best code we have created over the past few years, plus the new code we worked on this offseason. 
+
+Sorry the readme is a little unorganized, as it is simply a collection of the documentation that went into this project. In order:
 
 * Desription of Flexible Autonomous System
 * Description of new logging system
@@ -28,6 +30,8 @@ The flexible autonomous system is flexible because the user does not need to mod
 
 Creating Commands:
 A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run the VI GenerateCode, which will take your templates and convert them into a form that can be run in autonomous. 
+
+Note: Please don't use spaces in your control's names. It won't work. Code may be added later to fix this. 
 
 Currently, only boolean, number, and string parameters are supported. 
 
