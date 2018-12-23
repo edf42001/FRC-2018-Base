@@ -10,7 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="AutoFileCreator.vi" Type="VI" URL="../AutoFileEditor/AutoFileCreator.vi"/>
+		<Item Name="AutoFileCreatorMain.vi" Type="VI" URL="../AutoFileEditor/AutoFileCreatorMain.vi"/>
 		<Item Name="PathDrawerMain.vi" Type="VI" URL="../PathDrawer/PathDrawerMain.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
