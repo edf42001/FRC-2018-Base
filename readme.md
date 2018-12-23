@@ -1,4 +1,4 @@
-This robot project is meant to be the culmination of the best code we have created over the past few years, plus the new code we worked on this offseason. 
+﻿This robot project is meant to be the culmination of the best code we have created over the past few years, plus the new code we worked on this offseason. 
 
 Sorry the readme is a little unorganized, as it is simply a collection of the documentation that went into this project. In order:
 
@@ -10,26 +10,28 @@ Sorry the readme is a little unorganized, as it is simply a collection of the do
 
 About Flexible Autonomous:
 
-The flexible autonomous scripting system consists of two parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
+Note: The VIs for the flexible autonomous system are stored in Robot-Project/CreateCommands, Robot-Project/Auto, and Support/AutoFileEditor.
+ 
+The flexible autonomous scripting system consists of two main parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
 
 Creation:
-Open the Support/AutoEditor.lvproj to find the AutoFileCreator VI. The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
+Open the Support/AutoEditor.lvproj to find the AutoFileCreator VI (only open this VI through the project). The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
 
 To add a command or a structural element to the routine, select it in the command box, then left click the text box where you want to put it. You may only click at the end of a line, right after the closing ">" of a tag to validly add a new command/structure (collectively called tags from now on).
 
 If placing a command, a window will open for you to enter the parameters. (See Creating Commands for how to make these windows). The OK button will confirm what you have entered, while clicking Cancel or closing the window will cancel the placing of the command. 
 
-The routine can be modified by double clicking. A double click will bring up a window with options. You do not have to double click at the end of the line. Current supported operations are Edit, Delete, and Clear, with thought to add a Move option. Edit allows the user to edit the parameters of the tag. Delete deletes the tag. Clear clears the entire routine.
+The routine can be modified by double clicking. A double click will bring up a window with options. You do not have to double click at the end of the line. Current supported operations are Edit, Delete, Copy, Paste and Clear, with thought to add a Move option. Edit allows the user to edit the parameters of the tag. Delete deletes the tag. Clear clears the entire routine. Copy and Paste should be self explanatory. 
 
 There are, of course, the well known Load From Local, Save to Local, and Export to Robot buttons and a selection box with auto files. These do what you would expect.
 
 Clicking ESC unselects the current selected command.
 
 Execution:
-The flexible autonomous system is flexible because the user does not need to modify anything for eecution to work. It is all based on the available commands given to the system, see Creating Commands. All you have to do is pass it the path on the roboRIO to the file you want to run.
+The flexible autonomous system is flexible because the user does not need to modify anything for execution to work. It is all based on the available commands given to the system, see Creating Commands. All you have to do is pass it the path on the roboRIO to the file you want to run. Look at ExecuteXML.vi, which is inside of Autonomous.vi, for this code.
 
 Creating Commands:
-A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run the VI GenerateCode, which will take your templates and convert them into a form that can be run in autonomous. 
+A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run GenerateCode.vi, which will take your templates and convert them into a form that can be run in autonomous. 
 
 Note: Please don't use spaces in your control's names. It won't work. Code may be added later to fix this. 
 
@@ -47,7 +49,7 @@ It has three operations, Set, GetAll, and GetHeaders
 Set takes in the data name and the data, and stores it in the VI.
 Get All gets all the stored data and converts it to a csv string.
 GetHedears reads the names from the DataNames enum .ctl and outputs the csv string for the headers of the file
-All the VIs are in saved in the Robot-Project/Logging folder, and are mostly in periodic tasks (file writing) and the drive controller (some data writing) for now. 
+All the VIs are in saved in the Robot-Project/Logging folder, and are mostly used in periodic tasks (file writing) and the drive controller (some data writing) for now. 
 
 
 
