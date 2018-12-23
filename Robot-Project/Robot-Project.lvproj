@@ -811,10 +811,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Get_MPUTemp.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Get_MPUTemp.vi"/>
 				<Item Name="Get_Displacement.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Get_Displacement.vi"/>
 				<Item Name="Get_Quaternion.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Sensors/navX/Get/Get_Quaternion.vi"/>
-				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
-				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
-				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
-				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
 				<Item Name="WPI_DriverStationGame Specific Data.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGame Specific Data.vi"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -891,6 +887,7 @@ AddOutputFilter chunkFilter
 			<Item Name="SmallestAngle.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/SmallestAngle.vi"/>
 			<Item Name="TurnToAngleController.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/TurnToAngleController.vi"/>
 			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
+			<Item Name="TimerOffDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOffDelay.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
