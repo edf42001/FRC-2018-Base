@@ -31,7 +31,7 @@ Execution:
 The flexible autonomous system is flexible because the user does not need to modify anything for execution to work. It is all based on the available commands given to the system, see Creating Commands. All you have to do is pass it the path on the roboRIO to the file you want to run. Look at ExecuteXML.vi, which is inside of Autonomous.vi, for this code.
 
 Creating Commands:
-A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run GenerateCode.vi, which will take your templates and convert them into a form that can be run in autonomous. 
+A "command" is a VI that will execute on your robot. To create a command, add a VI in the special CommandTemplates folder, found under the My Computer section of the robot project. Add controls to the VI for each parameter you want passed to your command. On our robot, these VIs will be wrappers around our Command and Control VIs. When you are done creating or modifying a command template open and run GenerateCode.vi, which will take your templates and convert them into a form that can be run in autonomous. These are stored in Robot-Project/Auto/Commands, if you want to take a look at them.  
 
 Note: Please don't use spaces in your control's names. It won't work. Code may be added later to fix this. 
 
