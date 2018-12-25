@@ -10,12 +10,12 @@ Sorry the readme is a little unorganized, as it is simply a collection of the do
 
 About Flexible Autonomous:
 
-Note: The VIs for the flexible autonomous system are stored in Robot-Project/CreateCommands, Robot-Project/Auto, and Support/AutoFileEditor.
+Note: The VIs for the flexible autonomous system are stored in Robot-Project/CreateCommands, Robot-Project/Auto, and AutoEditor/AutoFileEditor.
  
 The flexible autonomous scripting system consists of two main parts: Creation of the XML autonomous file, and execution of the file. During creation, the user uses the mouse and keyboard to script the routine they want. During execution, the robot parses the file to read and execute the autonomous commands. 
 
 Creation:
-Open the Support/AutoEditor.lvproj to find the AutoFileCreator VI (only open this VI through the project). The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
+Open the AutoEditor/AutoEditor.lvproj to find the AutoFileCreator VI (only open this VI through the project). The user is greeted with a blank text box. A list of commands is to the left. (For information on creating commands, see section Creating Commands). Two of the options in the box, sequential and parallel, are not commands, but are instead structural elements. Any commands inside a sequential block will be executed one after another, and any in a parallel block will be executed at the same time. Structural elements can be nested for complex behavior. 
 
 To add a command or a structural element to the routine, select it in the command box, then left click the text box where you want to put it. You may only click at the end of a line, right after the closing ">" of a tag to validly add a new command/structure (collectively called tags from now on).
 
@@ -100,7 +100,7 @@ Feature list:
 		No auto selectors are set up, will need to be modified. 
 		To use enums on dashboard modify the VI “auto bind dashboard controls” or something like that. This bridge will be crossed later if we want.
 		Sends battery number for log file. 
-	Support/AutoEditor.lvproj
+	AutoEditor/AutoEditor.lvproj
 		Contains two VIs:
 			 GenerateXML.vi, the interface for creating auto files. Uses the VIs in ../Robot-Project/CreateCommands/CommandTemplates/ for the list of commands you can use in you file and for entering parameters to your file. Has save, load, and export capabilities. Also edit, delete, copy, paste, clear, and undo functionality. 
 			PathDrawerMain.vi, the interface for creating auto paths. Will need to be updated for 2019.
