@@ -35,6 +35,7 @@
 		<Item Name="LoggingTesting.vi" Type="VI" URL="../Logging/LoggingTesting.vi"/>
 		<Item Name="1DTurnMain.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/1DTurnMain.vi"/>
 		<Item Name="DriveForDistanceTester.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceTester.vi"/>
+		<Item Name="RobotSimulator.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/RobotSimulator.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
@@ -66,6 +67,12 @@
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
+				<Item Name="WPI_JoystickArcadeMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickArcadeMapping.vi"/>
+				<Item Name="WPI_JoystickTankMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickTankMapping.vi"/>
+				<Item Name="Lossy Behavior.ctl" Type="VI" URL="/&lt;vilib&gt;/ChannelSupport/Lossy Behavior.ctl"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 			</Item>
 			<Item Name="CreateCommandsFromTemplates.vi" Type="VI" URL="../CreateCommands/CreateCommandsFromTemplates.vi"/>
 			<Item Name="CreateExecuteCommand.vi" Type="VI" URL="../CreateCommands/CreateExecuteCommand.vi"/>
@@ -115,6 +122,21 @@
 			<Item Name="PathFileData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/PathFileData.ctl"/>
 			<Item Name="Drive Path.vi" Type="VI" URL="../Drive/Commands/Drive Path.vi"/>
 			<Item Name="CustomError.vi" Type="VI" URL="../../Dawgma Programming Library/WPI Helper Stuff/CustomError.vi"/>
+			<Item Name="Drive Controller Initialization.vi" Type="VI" URL="../Drive/Implementation/Infrastructure/Drive Controller Initialization.vi"/>
+			<Item Name="Drive Check for New Command.vi" Type="VI" URL="../Drive/Implementation/Infrastructure/Drive Check for New Command.vi"/>
+			<Item Name="Drive Immediate.vi" Type="VI" URL="../Drive/Commands/Drive Immediate.vi"/>
+			<Item Name="LinearInterpolate.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/LinearInterpolate.vi"/>
+			<Item Name="FancyPID.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/FancyPID.vi"/>
+			<Item Name="Constants.vi" Type="VI" URL="../Configuration/Constants.vi"/>
+			<Item Name="PipeLogic.lvclass" Type="LVClass" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/PipeLogic/PipeLogic.lvclass"/>
+			<Item Name="Lossy Stream-c(dbl,dbl,dbl,c(dbl,dbl)).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,c(dbl,dbl)).lvlib"/>
+			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
+			<Item Name="Stream.lvlib" Type="Library" URL="/&lt;resource&gt;/Channels/Stream/Stream.lvlib"/>
+			<Item Name="Update Probe Details String.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/Update Probe Details String.vi"/>
+			<Item Name="ProbeFormatting.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ProbeSupport/ProbeFormatting.vi"/>
+			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
+			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
+			<Item Name="OneShotPulse.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/OneShotPulse.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
