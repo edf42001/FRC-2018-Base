@@ -64,6 +64,7 @@
 			</Item>
 			<Item Name="AddNewNode.vi" Type="VI" URL="../AutoFileEditor/Utils/AddNewNode.vi"/>
 			<Item Name="ClusterToControls.vi" Type="VI" URL="../PathDrawer/ClusterToControls.vi"/>
+			<Item Name="Constants.vi" Type="VI" URL="../../Robot-Project/Configuration/Constants.vi"/>
 			<Item Name="ControlsToCluster.vi" Type="VI" URL="../PathDrawer/ControlsToCluster.vi"/>
 			<Item Name="CreateNiceXMLString.vi" Type="VI" URL="../AutoFileEditor/Utils/CreateNiceXMLString.vi"/>
 			<Item Name="DistanceFormula.vi" Type="VI" URL="../PathDrawer/DistanceFormula.vi"/>
@@ -88,6 +89,7 @@
 			<Item Name="ReplaceSelfClosingStructureElements.vi" Type="VI" URL="../AutoFileEditor/Utils/ReplaceSelfClosingStructureElements.vi"/>
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="Smoother.vi" Type="VI" URL="../PathDrawer/Smoother.vi"/>
+			<Item Name="StartingLocations.vi" Type="VI" URL="../PathDrawer/StartingLocations.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
