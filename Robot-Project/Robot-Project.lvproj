@@ -36,7 +36,6 @@
 		<Item Name="1DTurnMain.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/1DTurnMain.vi"/>
 		<Item Name="DriveForDistanceTester.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/DriveForDistanceTester.vi"/>
 		<Item Name="RobotSimulator.vi" Type="VI" URL="../../Dawgma Programming Library/RobotSimulator/RobotSimulator.vi"/>
-		<Item Name="ScoringLevels.ctl" Type="VI" URL="../Configuration/ScoringLevels.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
