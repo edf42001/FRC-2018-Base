@@ -195,6 +195,35 @@
 			<Item Name="Elevator Command Helper.vi" Type="VI" URL="../Elevator/Implementation/Infrastructure/Elevator Command Helper.vi"/>
 			<Item Name="GoToHeightWhenDriveAtDistance.vi" Type="VI" URL="../Elevator/Commands/GoToHeightWhenDriveAtDistance.vi"/>
 			<Item Name="GoToHeight.vi" Type="VI" URL="../Elevator/Commands/GoToHeight.vi"/>
+			<Item Name="GoToHeightAfterTime.vi" Type="VI" URL="../Elevator/Commands/GoToHeightAfterTime.vi"/>
+			<Item Name="ScoringLevels.ctl" Type="VI" URL="../Configuration/ScoringLevels.ctl"/>
+			<Item Name="ExecuteXML.vi" Type="VI" URL="../Auto/ExecuteXML.vi"/>
+			<Item Name="ParseXML.vi" Type="VI" URL="../Auto/ParseXML.vi"/>
+			<Item Name="FindFirstTagC.vi" Type="VI" URL="../Auto/Util/FindFirstTagC.vi"/>
+			<Item Name="FindEmptyElementC.vi" Type="VI" URL="../Auto/Util/FindEmptyElementC.vi"/>
+			<Item Name="FindElementC.vi" Type="VI" URL="../Auto/Util/FindElementC.vi"/>
+			<Item Name="ExecuteCommand.vi" Type="VI" URL="../Auto/ExecuteCommand.vi"/>
+			<Item Name="DriveForDistance-C.vi" Type="VI" URL="../Auto/Commands/DriveForDistance-C.vi"/>
+			<Item Name="ArrangeValuesByName.vi" Type="VI" URL="../CreateCommands/Utils/ArrangeValuesByName.vi"/>
+			<Item Name="StringToBoolean.vi" Type="VI" URL="../CreateCommands/Utils/StringToBoolean.vi"/>
+			<Item Name="StringToNumber.vi" Type="VI" URL="../CreateCommands/Utils/StringToNumber.vi"/>
+			<Item Name="DriveForTime-C.vi" Type="VI" URL="../Auto/Commands/DriveForTime-C.vi"/>
+			<Item Name="DrivePath-C.vi" Type="VI" URL="../Auto/Commands/DrivePath-C.vi"/>
+			<Item Name="StringToString.vi" Type="VI" URL="../CreateCommands/Utils/StringToString.vi"/>
+			<Item Name="DrivePathToTarget-C.vi" Type="VI" URL="../Auto/Commands/DrivePathToTarget-C.vi"/>
+			<Item Name="IntakeForTime-C.vi" Type="VI" URL="../Auto/Commands/IntakeForTime-C.vi"/>
+			<Item Name="RaiseAfterTime-C.vi" Type="VI" URL="../Auto/Commands/RaiseAfterTime-C.vi"/>
+			<Item Name="RaiseElevator-C.vi" Type="VI" URL="../Auto/Commands/RaiseElevator-C.vi"/>
+			<Item Name="RaiseElevatorDuringPath-C.vi" Type="VI" URL="../Auto/Commands/RaiseElevatorDuringPath-C.vi"/>
+			<Item Name="TurnToAngle-C.vi" Type="VI" URL="../Auto/Commands/TurnToAngle-C.vi"/>
+			<Item Name="Wait-C.vi" Type="VI" URL="../Auto/Commands/Wait-C.vi"/>
+			<Item Name="ParseXMLFragmentsC.vi" Type="VI" URL="../Auto/Util/ParseXMLFragmentsC.vi"/>
+			<Item Name="FindMatchingCloseTagC.vi" Type="VI" URL="../Auto/Util/FindMatchingCloseTagC.vi"/>
+			<Item Name="FindCloseTagByNameC.vi" Type="VI" URL="../Auto/Util/FindCloseTagByNameC.vi"/>
+			<Item Name="FindElementStartByNameC.vi" Type="VI" URL="../Auto/Util/FindElementStartByNameC.vi"/>
+			<Item Name="Drive Immediate.vi" Type="VI" URL="../Drive/Commands/Drive Immediate.vi"/>
+			<Item Name="Stop.vi" Type="VI" URL="../Elevator/Commands/Stop.vi"/>
+			<Item Name="Immediate but left and right.vi" Type="VI" URL="../Intake/Commands/Immediate but left and right.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
