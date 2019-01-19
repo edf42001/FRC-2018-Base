@@ -90,6 +90,7 @@
 			<Item Name="RobotNeededPathData.ctl" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RobotNeededPathData.ctl"/>
 			<Item Name="Smoother.vi" Type="VI" URL="../PathDrawer/Smoother.vi"/>
 			<Item Name="StartingLocations.vi" Type="VI" URL="../PathDrawer/StartingLocations.vi"/>
+			<Item Name="StartingPositions.ctl" Type="VI" URL="../PathDrawer/StartingPositions.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
