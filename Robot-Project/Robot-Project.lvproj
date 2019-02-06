@@ -95,15 +95,10 @@
 			<Item Name="CalculatePowerPursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculatePowerPursuit.vi"/>
 			<Item Name="DrawCircle.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/DrawCircle.vi"/>
 			<Item Name="VisualizePurePursuit.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/VisualizePurePursuit.vi"/>
-			<Item Name="CalculateCurvature.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateCurvature.vi"/>
 			<Item Name="DistanceFormula.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/DistanceFormula.vi"/>
-			<Item Name="LookAheadPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/LookAheadPoint.vi"/>
 			<Item Name="Timeout.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Timeout.vi"/>
-			<Item Name="TimerOnDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOnDelay.vi"/>
 			<Item Name="Latch.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/Latch.vi"/>
-			<Item Name="EndOfPathHandler.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EndOfPathHandler.vi"/>
 			<Item Name="RateLimiter.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/RateLimiter.vi"/>
-			<Item Name="ClosestPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/ClosestPoint.vi"/>
 			<Item Name="CalculateVelAtPoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateVelAtPoints.vi"/>
 			<Item Name="CalcDistanceFromEnd.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalcDistanceFromEnd.vi"/>
 			<Item Name="RadiusOfCircleThreePoints.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/RadiusOfCircleThreePoints.vi"/>
@@ -141,6 +136,11 @@
 			<Item Name="DriveState.ctl" Type="VI" URL="../Drive/DriveState.ctl"/>
 			<Item Name="Stop Driving.vi" Type="VI" URL="../Drive/Commands/Stop Driving.vi"/>
 			<Item Name="StartingLocations.vi" Type="VI" URL="../../AutoEditor/PathDrawer/StartingLocations.vi"/>
+			<Item Name="LookAheadPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/LookAheadPoint.vi"/>
+			<Item Name="CalculateCurvature.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/CalculateCurvature.vi"/>
+			<Item Name="TimerOnDelay.vi" Type="VI" URL="../../Dawgma Programming Library/Utilities/TimerOnDelay.vi"/>
+			<Item Name="EndOfPathHandler.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/EndOfPathHandler.vi"/>
+			<Item Name="ClosestPoint.vi" Type="VI" URL="../../Dawgma Programming Library/Controls/PurePursuit/ClosestPoint.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -864,7 +864,14 @@ AddOutputFilter chunkFilter
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
 			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
 			<Item Name="StartingLocations.vi" Type="VI" URL="../../AutoEditor/PathDrawer/StartingLocations.vi"/>
-			<Item Name="Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl).lvlib"/>
+			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Write.vi"/>
+			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Read.vi"/>
+			<Item Name="Write With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Write With Abort.vi"/>
+			<Item Name="Read With Abort.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Read With Abort.vi"/>
+			<Item Name="Endpoint.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Endpoint.vi"/>
+			<Item Name="EndpointRead.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/EndpointRead.vi"/>
+			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/Instantiate.vi"/>
+			<Item Name=")Channel.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/Lossy Stream-c(dbl,dbl,dbl,dbl,dbl,dbl)/)Channel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
